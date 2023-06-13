@@ -22,18 +22,63 @@ namespace prova
         private void button1_Click(object sender, EventArgs e)
         {
             string[] gab = { "A", "B", "D", "E", "C", "A", "A", "D", "E", "B" };
-            int respostaCorreta = 0;
-
+            string[] respostas = { tx1.Text, tx2.Text, tx3.Text, tx4.Text, tx5.Text, tx6.Text, tx7.Text, tx8.Text, tx9.Text, tx10.Text }; 
+            int respostaCertas = 0;
+           
 
             for (int i = 0; i < gab.Length; i++)
             {
-                if (tx_1.Text == gab['A'].ToString())
+                for (int j = 0; j < respostas.Length; j++)
                 {
-                    respostaCorreta =+ 1;
+                    if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
+                    else if (gab[i] == respostas[j])
+                    {
+                        respostaCertas = respostaCertas + 1;
+                    }
                 }
-              
             }
-            lb_resultado.Text = respostaCorreta.ToString();
+            
+            lb_resultado.Text = respostaCertas.ToString();
+        }
+
+        private void tx1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
